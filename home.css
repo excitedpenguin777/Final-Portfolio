@@ -5,7 +5,9 @@
 }
 
 html {
-  background-color: rgb(230, 245, 247);
+  background-image: linear-gradient(rgb(206, 233, 236), rgb(153, 194, 211));
+  background-attachment: fixed;
+  height: 100%;
 }
 
 .container {
@@ -20,7 +22,7 @@ html {
 }
 
 .box {
-  background-color: rgb(173, 229, 247);
+  background-color: rgb(208, 237, 247);
   padding: 0px;
   border-radius: 10px;
   color: rgb(0, 0, 0);
@@ -41,16 +43,20 @@ html {
 h3 {
   text-align: justify;
   padding: 0.5rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding-left: 17rem;
+  padding-right: 17rem;
   font-size: 1.5rem;
+  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-h2 {
+h1 {
   text-align: center;
   padding: 15px;
-  font-size: 2rem;
+  font-size: 3rem;
+  padding: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 .box:hover {
