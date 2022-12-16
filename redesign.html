@@ -1,142 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WebDev Studio</title>
-    <link rel="stylesheet" href="home.css" /> 
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-<style>
+    <title>Responsive Redesign</title>
+    <script src="modal.js" defer></script>
+    <link rel="stylesheet" href="redesign.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lato'
+      rel='stylesheet'>
+    <style>
 body {
-    font-family: 'Montserrat';
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 </style>
   </head>
 
   <body>
-    <div>
+    <div class="wrapper">
+      <div class="sidebar">
+        <button class="button" onclick="window.location='index.html';"> Home
+        </button>
+        <br>
+        <a class="nav-link" href="#context"> Context </a>
+        <a class="nav-link" href="#usability"> Usability </a>
+        <a class="nav-link" href="#visual"> Visual Redesign </a>
+        <a class="nav-link" href="#responsive"> Responsive Redesign </a>
+        <a class="nav-link" href="#conclusion"> Conclusion </a>
+
+      </div>
+      <div>
         <h1>Berkshire Hathaway Website Responsive
           Redesign</h1>
-        <h2> Background </h2>
-        <p> For this project, I found a poorly designed website and analyzed its
-          issues with respect to memorability, learnability, usability, and
-          accessibility. Next, I wireframed and prototyped a redesigned website for
-          desktop, tablet, and mobile layouts. Finally, I built and deployed the
-          redesigned website using HTML and CSS. </p>
-        <h2>Website Usability Problems</h2>
-        <p> I chose to look at the Berkshire Hathaway Website, linked <u> 
-          <a target="_blank" href="https://www.berkshirehathaway.com/">here</a> </u>. I chose this website because there are glaring issues with the
+        <h2 id="context"> Context </h2>
+        <p> In this project, I found a poorly designed website, analyzed its
+          issues, and prototyped and implemented a redesigned version. I
+          analyzed Berkshire Hathaway’s website with respect to usability,
+          memorability, learnability, and accessibility in order to determine
+          areas that needed improvement. I then wireframe and prototyped a
+          redesigned version of the homepage of the website for desktop, tablet,
+          and mobile layouts. Finally, I implemented my changes using HTML and
+          CSS. </p>
+        <h2 id="usability">Usability</h2>
+        <p> I chose to look at the <u>
+            <a target="_blank" href="https://www.berkshirehathaway.com/">Berkshire
+              Hathaway Website</a>
+          </u>. I chose this website because there are glaring issues with the
           accessibility and organization of the homepage. Below is a
           screenshot of the homepage. </p>
-          <img
-            src="./assets/original-page.png" alt="Berkshire Hathaway Original
-            Website"/>
-          <h4> Usability Problems</h4>
-          <p> Here are some usability problems with the website I noticed: </p>
+        <img class="modal-image"
+          src="./assets/original-page.png" alt="Berkshire Hathaway Original
+          Website" />
+        <p class="enlarge"> Click to enlarge</p>
+        <h3> Usability Problems</h3>
+        <p> Here are some usability problems with the website I noticed: </p>
+        <div class="list">
           <li> This website has poor memorability because similar information is
-            not organized together. For example, content that would fall under the
+            not organized together. For example, content that would fall under
+            the
             “About Us” category (legal, sustainability, corporate governance) is
             scattered. </li>
           <li> The way that information is stored and lack of information on the
-            homepage leads to poor usability. For example, you have to click twice
+            homepage leads to poor usability. For example, you have to click
+            twice
             to see a news report (News Releases -> Link -> PDF). This is
             information that should be accessible on the home page so that users
             can learn about the company when they first visit the webpage. </li>
           <li> There is not enough difference in font size between headers and
             other text, which makes it hard to establish hierarchy. Furthermore,
-            some of the text on the webpage is too small, which negatively affects
+            some of the text on the webpage is too small, which negatively
+            affects
             accessibility. </li>
-          <li> The navigation links to different types of information are included
+          <li> The navigation links to different types of information are
+            included
             in an ordered list of hyperlinks, which negatively affects
-            learnability because users have to click on a link to understand that
+            learnability because users have to click on a link to understand
+            that
             it is a top-level link that includes more content.</li>
           <li> There is no search bar or function, which makes it hard to find
             specific information if you are first using the site and not sure
             where it lives. This leads to poor usability and learnability. </li>
-          <h4> Accessibility Problems</h4>
-          <p> Next, I used WebAIM WAVE to detect possible accessibility problems.
-            The main accessibility problem that WAVE found was that the text that
-            indicates when a section was updated is too small. I agree that this
-            is an issue, as I personally had trouble reading. A related problem
-            that WAVE identified was that the headings are stored as an unordered
-            list and are not represented as heading elements; this makes the
-            website very hard to navigate and negatively affects the
-            accessibility. Finally, WAVE pointed out that there is no lang
-            attribute value and that none of the page regions have ARIA landmarks;
-            these both negatively affect the user experience of anyone trying to
-            navigate the page with assistive technology. </p>
-          <h2 class="mt-5 mb-4">Visual Redesign</h2>
-          <h4 class="mt-3 mb-3"> Low-Fidelity Wireframing</h4>
-          <p> During the redesign process, I first created lo-fi wireframes to
-            address the usability problems I found above. I created wireframes for
-            desktop, tablet, and mobile layouts.</p>
-  
-          <h4> Desktop</h4>
-  
-          <img
-            src="./assets/lo-desktop.png" alt="Berkshire Hathaway Redesign Desktop Wireframe"/>
-  
-          <h4> Tablet</h4>
-  
-          <img
-            src="./assets/lo-tablet.png" alt="Berkshire Hathaway Redesign Tablet Wireframe"/>
-  
-          <h4> Mobile</h4>
-  
-          <img
-            src="./assets/lo-mobile.png" alt="Berkshire Hathaway Redesign Mobile Wireframe"/>
-  
-          <h4 class="mt-3 mb-3"> Visual Design Style Guide</h4>
-          <p> Next, I defined
-            a visual design guide that displays the main colors, typography, and
-            reusable components for the redesigned webpage.</p>
-  
-          <img
-            src="./assets/guide.png" alt="Berkshire Hathaway Redesign Style Guide"/>
-          <h4 class="mt-3 mb-3"> High-Fidelity Prototyping</h4>
-  
-          I then designed high-fidelity prototypes for my redesigned webpage for
+        </div>
+        <h3> Accessibility Problems</h3>
+        <p> Next, I used WebAIM WAVE to detect possible accessibility problems.
+          The main accessibility problem that WAVE found was that the text that
+          indicates when a section was updated is too small. I agree that this
+          is an issue, as I personally had trouble reading. A related problem
+          that WAVE identified was that the headings are stored as an unordered
+          list and are not represented as heading elements; this makes the
+          website very hard to navigate and negatively affects the
+          accessibility. Finally, WAVE pointed out that there is no lang
+          attribute value and that none of the page regions have ARIA landmarks;
+          these both negatively affect the user experience of anyone trying to
+          navigate the page with assistive technology. </p>
+        <h2 id="visual">Visual Redesign</h2>
+        <h3> Low-Fidelity Wireframing</h3>
+        <p> During the redesign process, I first created lo-fi wireframes to
+          address the usability problems I found above. I created wireframes for
+          desktop, tablet, and mobile layouts.</p>
+
+          <div class="gallery">
+            <div>
+              <h4 class="centered"> Desktop</h4>
+
+              <img class="modal-image"
+                src="./assets/lo-desktop.png" alt="Berkshire Hathaway Redesign Desktop
+                Wireframe" />
+            </div>
+            <div>
+              <h4 class="centered"> Tablet</h4>
+
+              <img class="modal-image"
+                src="./assets/lo-tablet.png" alt="Berkshire Hathaway Redesign Tablet
+                Wireframe" />
+            </div>
+            <div>
+              <h4 class="centered"> Mobile</h4>
+
+              <img class="modal-image"
+                src="./assets/lo-mobile.png" alt="Berkshire Hathaway Redesign Mobile
+                Wireframe" />
+            </div>
+          </div>
+          <p class="enlarge"> Click to enlarge</p>
+
+        <h3> Visual Design Style Guide</h3>
+        <p> Next, I defined
+          a visual design guide that displays the main colors, typography, and
+          reusable components for the redesigned webpage.</p>
+
+        <img class="modal-image"
+          src="./assets/guide.png" alt="Berkshire Hathaway Redesign Style Guide"
+          />
+          <p class="enlarge"> Click to enlarge</p>
+        <h3> High-Fidelity Prototyping</h3>
+
+        <p> I then designed high-fidelity prototypes for my redesigned webpage
+          for
           desktop, tablet, and mobile displays. Some displays included multiple
           prototypes in order to fully display the interactive functions of my
-          webpage, such as the navigation bar.
-  
-          <h4 class="mt-3 mb-3 text-center text-weight-bold"> Desktop</h4>
-  
-          <img
-            src="./assets/hi-desktop1.png" alt="Berkshire Hathaway Redesign Desktop Prototype 1"/>
-  
-          <img
-            src="./assets/hi-desktop2.png" alt="Berkshire Hathaway Redesign Desktop Prototype 2"/>
-  
-          <img
-            src="./assets/hi-desktop3.png" alt="Berkshire Hathaway Redesign Desktop Prototype 3"/>
-  
-          <h4> Tablet</h4>
-  
-          <img
-            src="./assets/hi-tablet1.png" alt="Berkshire Hathaway Redesign Tablet Prototype 1"/>
-  
-          <img
-            src="./assets/hi-tablet2.png" alt="Berkshire Hathaway Redesign Tablet Prototype 2"/>
-  
-          <h4> Mobile</h4>
-  
-          <img src="./assets/hi-mobile.png" alt="Berkshire Hathaway Redesign Mobile Prototype"/>
-  
-          <h2>Responsive Redesign</h2>
-          Finally, I used my wireframes, style guide, and prototypes to design a responive webpage that addresses the original usability and accessibility issues I found with the Berkshire Hathaway website. The website can be found <u> <a target="_blank" href="https://excitedpenguin777.github.io/Berkshire-Hathaway-Responsive-Redesign/"> here</a> </u>. Below are screenshots of the website for desktop, tablet, and mobile displays.
-          
-          <h4> Desktop</h4>
-  
-          <img src="./assets/desktop-redesign.png" alt="Berkshire Hathaway Desktop Redesign"/>
-  
-          <h4> Tablet</h4>
-  
-          <img src="./assets/tablet-redesign.png" alt="Berkshire Hathaway Tablet Redesign"/>
-  
-          <h4 class="mt-3 mb-3 text-center text-weight-bolder"> Mobile</h4>
-  
-          <img src="./assets/mobile-redesign.png" alt="Berkshire Hathaway Mobile Redesign"/>
-  
+          webpage, such as the navigation bar. </p>
+
+        <h4 class="centered"> Desktop</h4>
+        
+        <div class="figma">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="720" height="405" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FuaWiOxmM2pdnzkXhqUJ6ck%2FResponsive-Redesign%3Fnode-id%3D9%253A2%26t%3DW6iZ10OTsohT4lHT-1" allowfullscreen></iframe>
         </div>
+
+        <h4 class="centered"> Tablet</h4>
+
+        <div class="figma">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="720" height="405" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FuaWiOxmM2pdnzkXhqUJ6ck%2FResponsive-Redesign%3Fnode-id%3D9%253A2%26t%3DW6iZ10OTsohT4lHT-1" allowfullscreen></iframe>
+        </div>
+
+        <h4 class="centered"> Mobile</h4>
+
+        <div class="figma">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="720" height="405" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FuaWiOxmM2pdnzkXhqUJ6ck%2FResponsive-Redesign%3Fnode-id%3D9%253A4%26t%3DW6iZ10OTsohT4lHT-1" allowfullscreen></iframe>
+        </div>
+
+        <h2 id="responsive">Responsive Redesign</h2>
+        <p>
+          Finally, I used my wireframes, style guide, and prototypes to design a
+          responive webpage that addresses the original usability and
+          accessibility
+          issues I found with the Berkshire Hathaway website. The website can be
+          found <u> <a target="_blank"
+              href="https://excitedpenguin777.github.io/Berkshire-Hathaway-Responsive-Redesign/">
+              here</a> </u>.
+        </p>
+        <h2 id="conlcusion"> Conclusion </h2>
+
+        <p class="conclusion">
+          I learned about the major design principles, usability, memorability,
+          learnability, and accessibility in this project. These are important
+          principles to understand as a product manager in order to make good
+          design decisions and to recognize poor ones. I also learned how to use
+          Balsamiq and Figma for wire framing and prototyping, and I gained more
+          experience with HTML and CSS during the development portion of the
+          project.
+
+        </p>
+
+        <!-- Modal from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+        <div class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content">
+          <div class="caption"></div>
+        </div>
+      </div>
+
+    </div>
   </body>
 
 </html>
