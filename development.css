@@ -69,6 +69,18 @@ button:hover {
     background-color: rgba(82, 128, 145, 0.4);
 }
 
+.body-button {
+    background-color: rgb(208, 237, 247);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.body-button:hover {
+    transition: 0.3s;
+    background-color: rgb(180, 212, 223);
+}
+
 /* Modal from https://www.w3schools.com/howto/howto_css_modal_images.asp */
 
 /* Style the Image Used to Trigger the Modal */
