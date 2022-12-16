@@ -3,9 +3,19 @@
     <head>
         <title>WebDev Studio</title>
         <!-- import javascript variables and functions -->
-        <script src="app.js" defer></script>
+        <script src="modal.js" defer></script>
         <!-- import CSS styles -->
         <link rel="stylesheet" href="storyboard.css" />
+        <link href='https://fonts.googleapis.com/css?family=Lato'
+            rel='stylesheet'>
+        <style>
+body {
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+</style>
     </head>
 
     <!-- page content goes into <body> -->
@@ -14,23 +24,20 @@
             <h1>
                 CVS Self-Checkout Station Personas & Storyboarding
             </h1>
-            <h2 class="mt-5 mb-4"> Background </h2>
+            <h2> Context </h2>
             <p>
-                For this project, I observed and researched how CVS customers
-                interact
-                with the self-checkout station interface. I then brainstormed
-                personas
-                based on my user research and created a storyboard to depict the
-                user
-                journey.
+                The goal of this project was to analyze how users interact with
+                an interface so that I could better understand its strengths and
+                limitations. In particular, I looked at how CVS shoppers use the
+                self-checkout interface to purchase store items. I first
+                conducted user research to understand their motivations and pain
+                points with using the interface. I then brainstormed personas to
+                match my observations so that I could get a better understanding
+                of the types of users that interact with the self-checkout
+                station. Finally, I created a storyboard to depict a typical
+                user journey of a CVS customer interacting with the interface.
             </p>
-            <h2 class="mt-5 mb-4">Self-Checkout Station Diagram</h2>
-            <img
-                class="simage"
-                src="./assets/checkout-diagram.png"
-                alt="CVS self-chekout station
-                diagram"
-                />
+            <h2>Self-Checkout Station</h2>
             <p>
                 Users place all items to be purchased in the area left of the
                 scanner
@@ -42,72 +49,101 @@
                 and are
                 in the bagging area, users pay by using the card reader.
             </p>
+            <img
+                id="myImg"
+                src="./assets/checkout-diagram.png"
+                alt="CVS self-chekout station
+                diagram"
+                style="width:100%;max-width:300px"
+                />
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+            <p class="enlarge">
+                Click to enlarge
+            </p>
             <h2 class="mt-5 mb-4">Observations and User Research</h2>
             <h4 class="mt-3 mb-3"> User Observations</h4>
-            <li>
-                Users did not put their items to be scanned in the intended area
-                to the
-                left of the scanner
-            </li>
-            <li> Users were able to scan items on their first try without issues
-            </li>
-            <li>
-                Some users interacted with the payment screen to select their
-                payment
-                method before swiping their credit/debit cards, while others
-                ignored it
-                and just paid immediately
-            </li>
-            <li>
-                Two users forgot to place items in the bagging area to the right
-                of
-                scanner, prompting a CVS employee to come over and help
-            </li>
-            <p> </p>
-            <h4 class="mt-3 mb-3"> User Research Questions</h4>
-            <ol type="1">
+            <div class="list">
                 <li>
-                    Why did you choose the self-checkout station instead of the
-                    cashier-checkout station?
+                    Users did not put their items to be scanned in the intended
+                    area
+                    to the
+                    left of the scanner
+                </li>
+                <li> Users were able to scan items on their first try without
+                    issues
                 </li>
                 <li>
-                    Did the self-checkout station interface perform as you
-                    expected? If not, which parts were confusing?
+                    Some users interacted with the payment screen to select
+                    their
+                    payment
+                    method before swiping their credit/debit cards, while others
+                    ignored it
+                    and just paid immediately
                 </li>
                 <li>
-                    What were the easiest and hardest tasks to accomplish using
-                    the interface?
+                    Two users forgot to place items in the bagging area to the
+                    right
+                    of
+                    scanner, prompting a CVS employee to come over and help
                 </li>
-                <li> How did you feel while using the self-checkout station?
-                </li>
-            </ol>
-            <h4 class="mt-3 mb-3"> Summary of Responses</h4>
-            <li>
-                Users chose the self-checkout station because they thought it
-                would be
-                quicker than waiting in line for a cashier-checkout station
-            </li>
-            <li>
-                One user felt uncomfortable using the self-checkout station
-                because they
-                accidentally made a mistake, prompting a CVS employee to check
-                on them
-            </li>
-            <li>
-                Users generally found scanning each item to be the easiest task
-                and
-                placing their items in the correct place to be the hardest
-            </li>
-            <li>
-                Users felt nervous about scanning items incorrectly, as there
-                was no
-                clear way to undo an item scanned by mistake on the display{" "}
-            </li>
-            <li>
-                Users were confused with the payment process, as the
-                instructions on the
-                station display did not match the ones given on the card reader
-            </li>
+            </div>
+            <h4 class="mt-3 mb-3"> User Research</h4>
+            <div class="list">
+                <ol>
+                    <li>
+                        Why did you choose the self-checkout station instead of
+                        the
+                        cashier-checkout station?
+                        <br>
+                        > Users chose the self-checkout station because they
+                        thought it
+                        would be
+                        quicker than waiting in line for a cashier-checkout
+                        station
+                    </li>
+                    <li>
+                        Did the self-checkout station interface perform as you
+                        expected? If not, which parts were confusing?
+                        <br>
+                        > Users were confused with the payment process, as the
+                        instructions on the
+                        station display did not match the ones given on the card
+                        reader
+                    </li>
+                    <li>
+                        What were the easiest and hardest tasks to accomplish
+                        using
+                        the interface?
+                        <br>
+                        > Users generally found scanning each item to be the
+                        easiest task
+                        and
+                        placing their items in the correct place to be the
+                        hardest
+                    </li>
+                    <li> How did you feel while using the self-checkout station?
+                        <br>
+                        > Users felt nervous about scanning items incorrectly,
+                        as there
+                        was no
+                        clear way to undo an item scanned by mistake on the
+                        display
+                    </li>
+                </ol>
+            </div>
+
+
             <h2>Personas</h2>
             <div>
                 <div>
@@ -165,15 +201,37 @@
             </div>
             <h2>Storyboard of Self-Checkout Station</h2>
             <img
-                class="simage"
-                src="./assets/storyboard-1.png"
-                alt="CVS self-chekout station storyboard part 1"
+                id="myImg"
+                src="./assets/storyboard.png"
+                alt="CVS self-chekout station storyboard"
+                style="width:100%;max-width:300px"
                 />
-            <img
-                class="simage"
-                src="./assets/storyboard-2.png"
-                alt="CVS self-chekout station storyboard part 2"
-                />
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img04">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+            <p class="enlarge">
+                Click to enlarge
+            </p>
+            <h2>Conclusion</h2>
+            <p class="conclusion">
+                This project taught me how important user research is for
+                understanding the strengths and limitations of an interface. I
+                learned how formulate good questions for user research and how
+                to synthesize my research and observations to create more
+                generalized personas. As an aspiring product manager, it will be
+                important for me to use these skills to take a customer-centric
+                approach when designing and implementing a project.
+
+            </p>
         </div>
     </body>
 
