@@ -1,7 +1,5 @@
 html {
-    background-image: linear-gradient(rgb(219, 241, 245), rgb(105, 158, 177));
-    background-attachment: fixed;
-    height: 100%;
+    background-color: #f7e8e8;
     scroll-behavior: smooth;
 }
 
@@ -43,7 +41,7 @@ html {
 
 /* CSS from https://getcssscan.com/css-buttons-examples*/
 .button {
-  background-color: rgba(105, 158, 177, 0.4);
+  background-color: #dfe3ee;
   border-radius: 8px;
   border-width: 0;
   color: #1b1b1b;
@@ -62,23 +60,18 @@ html {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-top: 2rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 button:hover {
     transition: 0.3s;
-    background-color: rgba(82, 128, 145, 0.4);
+    background-color: #cdd7f3;
 }
 
 .body-button {
-    background-color: rgb(208, 237, 247);
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-
-.body-button:hover {
-    transition: 0.3s;
-    background-color: rgb(180, 212, 223);
 }
 
 h1, h2, h3, h4, p {
@@ -112,3 +105,9 @@ img {
     padding-bottom: 4rem;
 }
 
+.list {
+    background-color: #dfe3ee;
+    border-radius: 1rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}

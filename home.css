@@ -1,7 +1,5 @@
 html {
-  background-image: linear-gradient(rgb(219, 241, 245), rgb(105, 158, 177));
-  background-attachment: fixed;
-  height: 100%;
+  background-color: #f7e8e8;
 }
 
 .project-container {
@@ -23,7 +21,7 @@ html {
   height: 27rem;
   width: 27rem;
   padding: 1rem;
-  background-color: rgb(208, 237, 247);
+  background-color: #dfe3ee;
   border-radius: 1rem;
   /* box shadow from https://getcssscan.com/css-box-shadow-examples */
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -58,7 +56,8 @@ h1 {
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transition: 0.3s;
+  background-color: #cdd7f3;
 }
 
 .link {
