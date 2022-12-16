@@ -1,16 +1,19 @@
-// Code from https://www.w3schools.com/howto/howto_css_modal_images.asp
+// Code adapted from https://www.w3schools.com/howto/howto_css_modal_images.asp
 
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementsByClassName("modal")[0];
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+var images = document.getElementsByClassName("myImg");
+var modalImg = document.getElementsByClassName("modal-content")[0];
+var captionText = document.getElementsByClassName("caption")[0];
+
+for (let img of images) {
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
 }
 
 // Get the <span> element that closes the modal
