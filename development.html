@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>MyTrails Development</title>
-    <script src="modal.js" defer></script>
-    <link rel="stylesheet" href="iterative.css" />
-    <link href='https://fonts.googleapis.com/css?family=Lato'
-      rel='stylesheet'>
-    <style>
+    <head>
+        <title>MyTrails Development</title>
+        <script src="modal.js" defer></script>
+        <link rel="stylesheet" href="iterative.css" />
+        <link href='https://fonts.googleapis.com/css?family=Lato'
+            rel='stylesheet'>
+        <style>
 body {
     font-family: Lato, Arial, sans-serif;
     font-weight: 100;
@@ -14,77 +14,98 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 </style>
-  </head>
+    </head>
 
-  <body>
-    <div class="wrapper">
-      <div class="sidebar">
-        <button class="button" onclick="window.location='index.html';"> Home
-        </button>
-        <br>
-        <a class="nav-link" href="#context"> Context </a>
-        <a class="nav-link" href="#inspiration"> Inspiration </a>
-        <a class="nav-link" href="#features"> Features </a>
-        <a class="nav-link" href="#website"> Website </a>
-        <a class="nav-link" href="#conclusion"> Conclusion </a>
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <button class="button" onclick="window.location='index.html';">
+                    Home
+                </button>
+                <br>
+                <a class="nav-link" href="#context"> Context </a>
+                <a class="nav-link" href="#inspiration"> Inspiration </a>
+                <a class="nav-link" href="#features"> Features </a>
+                <a class="nav-link" href="#website"> Website </a>
+                <a class="nav-link" href="#conclusion"> Conclusion </a>
 
-      </div>
-      <div>
-        <h1>MyTrails Development
-          Redesign</h1>
-        <h2 id="context"> Context </h2>
-        <p> I created an application to enable users to view and track their completed Rhode Island hiking trails. I first found my hiking trail data on AllTrails and other online sources. I then focused on how I wanted to visually represent each hiking trail and how to design a system for marking completed hiking trails. Finally, I used React State to apply filters and sorts so that users could customize the way they view hiking trail data.  </p>
-        <h2 id="inspiration"> Inspiration </h2>
+            </div>
+            <div>
+                <h1>MyTrails Development
+                </h1>
+                <h2 id="context"> Context </h2>
+                <p> I created an application to enable users to view and track
+                    their completed Rhode Island hiking trails. I first found my
+                    hiking trail data on AllTrails and other online sources. I
+                    then focused on how I wanted to visually represent each
+                    hiking trail and how to design a system for marking
+                    completed hiking trails. Finally, I used React State to
+                    apply filters and sorts so that users could customize the
+                    way they view hiking trail data. </p>
+                <h2 id="inspiration"> Inspiration </h2>
 
-        <p> I am a big hiker and lover of the outdoors. I have enjoyed using applications such as AllTrails, but wanted to create an application focused on hiking in Rhode Island. I also am a big Strava user, where I can keep track of the total distance I have ran over the past month. I wanted to create this application to allow users to both explore trails and keep track of their distance milestones.</p>
+                <p> I am a big hiker and lover of the outdoors. I have enjoyed
+                    using applications such as AllTrails, but wanted to create
+                    an application focused on hiking in Rhode Island. I also am
+                    a big Strava user, where I can keep track of the total
+                    distance I have ran over the past month. I wanted to create
+                    this application to allow users to both explore trails and
+                    keep track of their distance milestones.</p>
 
-        <h2 id="features"> Features </h2>
+                <h2 id="features"> Features </h2>
 
-        <p> Here are some features that I included in my website</p>
+                <p> Here are some features that I included in my website</p>
+                <div class="list">
+                    <ul>
+                        <li>
+                            3 filtering categories
+                        </li>
+                        <li>
+                            2 sorting categories
+                        </li>
+                        <li>
+                            Add and remove functionality for each hiking trail
+                        </li>
+                        <li>
+                            Aggregator component that tracks total miles
+                            completed
+                        </li>
+                        <li>
+                            Reset functionality for aggregator and filters/sorts
+                        </li>
+                    </ul>
 
-        <div class="list">
-            <ul>
-                <li>
-                    3 filtering categories
-                </li>
-                <li>
-                    2 sorting categories
-                </li>
-                <li>
-                    Add and remove functionality for each hiking trail
-                </li>
-                <li>
-                    Aggregator component that tracks total miles completed
-                </li>
-                <li>
-                    Reset functionality for aggregator and filters/sorts
-                </li>
-            </ul>
+                </div>
+
+                <h2 id="website">Website</h2>
+
+                <p> I built this website using React. You can view the finished
+                    product <a target="_blank"
+                        href="https://excitedpenguin777.github.io/Hiking-Trails-Development/">here</a>!</p>
+                <h2 id="conlcusion"> Conclusion </h2>
+
+                <p class="conclusion">
+                    I gained experience using React while developing my
+                    application. I learned a lot about how to organize a large
+                    amount of code into separate components based on
+                    functionality. I also learned how to use State to make an
+                    application responsive and represent user changes visually.
+                    While directly coding a project is outside of a product
+                    managers scope, it is important to understand different
+                    frameworks such as React in order to better collaborate with
+                    engineers.
+
+                </p>
+
+                <!-- Modal from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+                <div class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content">
+                    <div class="caption"></div>
+                </div>
+            </div>
 
         </div>
-
-        <h2 id="website">Website</h2>
-
-        <p> I built this website using React. You can view the finished product <a target="_blank" href="https://excitedpenguin777.github.io/Hiking-Trails-Development/">here</a>!</p>
-        
-        
-        
-        <h2 id="conlcusion"> Conclusion </h2>
-
-        <p class="conclusion">
-            I gained experience using React while developing my application. I learned a lot about how to organize a large amount of code into separate components based on functionality. I also learned how to use State to make an application responsive and represent user changes visually. While directly coding a project is outside of a product managers scope, it is important to understand different frameworks such as React in order to better collaborate with engineers. 
-
-        </p>
-
-        <!-- Modal from https://www.w3schools.com/howto/howto_css_modal_images.asp -->
-        <div class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content">
-          <div class="caption"></div>
-        </div>
-      </div>
-
-    </div>
-  </body>
+    </body>
 
 </html>
