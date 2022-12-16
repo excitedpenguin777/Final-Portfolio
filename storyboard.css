@@ -9,6 +9,10 @@ h1, h2, h3, h4, p {
     padding-right: 10rem;
 }
 
+h2 {
+    padding-top: 2rem;
+}
+
 li {
     padding: 0.5rem;
     padding-left: 1rem;
@@ -21,8 +25,6 @@ h1 {
 }
 
 img {
-    padding-left: 10rem;
-    padding-right: 10rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -139,4 +141,28 @@ img {
 
 .conclusion {
     padding-bottom: 2rem;
+}
+
+.personas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-start;
+    column-gap: 5rem;
+}
+
+.persona {
+    text-align: justify;
+    width: 30rem;
+}
+
+.persona-title {
+    text-align: center;
+}
+
+.persona-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
